@@ -12,3 +12,8 @@
 <footer>
     <p>© Tino_Zwino 2024</p>
 </footer>
+
+<style>
+    @import '/main.css';
+</style>
+    

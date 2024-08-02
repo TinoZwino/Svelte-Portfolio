@@ -1,0 +1,22 @@
+/* Roboto flex */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,slnt,wdth,wght,GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC@8..144,-10..0,25..151,100..1000,-200..150,27..175,323..603,25..135,649..854,-305..-98,560..788,416..570,528..760&display=swap');
+
+*{
+    background: rgb(136, 136, 136);
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0,
+      "wdth" 100,
+      "GRAD" 0,
+      "XOPQ" 96, /* Thick Stroke */
+      "XTRA" 468, /* Counter Width */
+      "YOPQ" 79, /* Thin Stroke */
+      "YTAS" 750, /* Ascender Height */
+      "YTDE" -203, /* Descender depth */
+      "YTFI" 738, /* Figure height */
+      "YTLC" 514, /* Lowercase height */
+      "YTUC" 712; /* Uppercase height */
+}
