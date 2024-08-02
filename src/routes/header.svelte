@@ -1,2 +1,7 @@
-<p>test</p>
-<nav>Hmmmm?</nav>
+
+<nav>
+    <ul>
+        <li> <a href="#">Home</a></li>
+        <li><a href="/contact">Header</a></li>
+    </ul>
+</nav>
