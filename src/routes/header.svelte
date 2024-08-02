@@ -1,7 +1,6 @@
-
 <nav>
     <ul>
         <li> <a href="#">Home</a></li>
-        <li><a href="/contact">Header</a></li>
+        <li><a href="./links">Links</a></li>
     </ul>
 </nav>
