@@ -2,5 +2,5 @@
 <p>You can find me at these places</p>
 
 <ul>
-    <li><button onclick="location.href='https://github.com/TinoZwino'"><img src="https://github.githubassets.com/favicons/favicon-dark.png" alt="Github logo">Github</button></li>
+    <li><a href='https://github.com/TinoZwino'><img src="https://github.githubassets.com/favicons/favicon-dark.png" alt="Github logo">Github</a></li>
 </ul>

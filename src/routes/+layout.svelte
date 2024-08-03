@@ -15,5 +15,22 @@
 
 <style>
     @import '/main.css';
+
+    header, footer{
+        display:flex;
+        position: fixed;
+        width: 100%;
+        justify-content:center;
+        align-items:center;
+
+    }
+
+    footer{
+            bottom: 0;
+        }
+
+    header{
+        top: 0;
+    }
 </style>
     

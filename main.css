@@ -4,7 +4,6 @@
 :root{
     --fg-color: #FFFF80;
     --secondary-color: #ffff00;
-    --tertiary-color: #a9a900;
     --bg-color: #004000;
 }
 
@@ -26,52 +25,68 @@
       "YTFI" 738, /* Figure height */
       "YTLC" 514, /* Lowercase height */
       "YTUC" 712; /* Uppercase height */
+
+      :focus {
+        border: none;
+        border-radius: 10000px;
+        outline: solid var(--fg-color);
+        outline-width: 3px;
+        outline-offset: 5px;
+    }
 }
 
-body{
+body{   
     background: var(--bg-color);
     margin: 0;
 }
 
 nav ul li {
     display: inline;
-    padding: 20px;
-}
-
-@keyframes linkAnimation {
-    0% {font-weight: 300;}
-    100% {font-weight: 1000;}
+    padding: 10px;
+    transition: outline-offset 1s cubic-bezier(.45,.05,.55,.95) 100ms, outline-width 1s cubic-bezier(.45,.05,.55,.95) 100ms;
+    
+    a:hover{
+        outline-offset: 7px;
+        outline-width: 5px;
     }
-
-
-a {
-    text-decoration: underline;
-    color: var(--secondary-color);
-    font-weight: 600;
-
-    transition: font-weight 1s cubic-bezier(.45,.05,.55,.95) 100ms;
 }
+
 
 a:link {
-}
+    color: var(--secondary-color);
+    text-decoration: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0px;
+    text-decoration-skip-ink: none;
+    color: var(--secondary-color);
 
-a:visited {
-    color: var(--tertiary-color);
-}
+    transition: font-weight 0.15s cubic-bezier(.45,.05,.55,.95) 100ms, font-variation-settings 0.15s cubic-bezier(.45,.05,.55,.95) 100ms, text-decoration 0.15s cubic-bezier(.45,.05,.55,.95);
 
-a:focus {
-    border-radius: 25%;
-    border-color: var(--fg-color);
+    font-weight: 600;
+    font-variation-settings:
+    "slnt" 0,
+    "GRAD" 0,
+    "YTAS" 750, /* Ascender Height */
+    "YTDE" -203, /* Descender depth */
+    "YTLC" 514, /* Lowercase height */
+    "YTUC" 712; /* Uppercase height */
 }
 
 a:hover {
-    text-decoration: wavy;
-
-    animation: linkAnimation 1s;
-    animation-timing-function: cubic-bezier(.45,.05,.55,.95);
-    animation-direction: normal;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
     font-weight: 1000;
+    font-variation-settings:
+    "slnt" -2,
+    "GRAD" 150,
+    "YTAS" 854, /* Ascender Height */
+    "YTDE" -305, /* Descender depth */
+    "YTLC" 416, /* Lowercase height */
+    "YTUC" 760; /* Uppercase height */
+
+
 }
 
 a:active {
+    color: var(--fg-color);
 }
