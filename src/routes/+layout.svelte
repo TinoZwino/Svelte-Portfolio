@@ -25,12 +25,31 @@
 
     }
 
+    header{
+        top: 0;
+    }
+
     footer{
             bottom: 0;
         }
 
-    header{
-        top: 0;
+    footer p{
+        font-variation-settings:
+        "GRAD" -200,
+        "YTLC" 440, /* Lowercase height */
+        "YTUC" 600, /* Uppercase height */
+        "YTFI" 560; /* Figure height */
+
+        transition: font-variation-settings 0.25s cubic-bezier(.45,.05,.55,.95);
     }
+
+    footer p:hover{
+        font-variation-settings:
+        "GRAD" 150,
+        "YTLC" 570, /* Lowercase height */
+        "YTUC" 760, /* Uppercase height */
+        "YTFI" 788; /* Figure height */
+
+      }
 </style>
     

@@ -10,8 +10,12 @@
 
 <style>
     @keyframes welcomeAnimation {
-    0% {font-weight: 300;}
-    100% {font-weight: 1000;}
+    0% {font-variation-settings: "YTLC" 440, /* Lowercase height */ "YTUC" 600, /* Uppercase height */ "YTFI" 560; /* Figure height */}
+    25% {font-weight: 300;
+        font-variation-settings: "YTLC" 570, /* Lowercase height */ "YTUC" 760, /* Uppercase height */ "YTFI" 788; /* Figure height */}
+    75% {font-weight: 1000;
+        font-variation-settings: "YTLC" 570, /* Lowercase height */ "YTUC" 760, /* Uppercase height */ "YTFI" 788; /* Figure height */}
+    100% {font-variation-settings: "YTLC" 440, /* Lowercase height */ "YTUC" 600, /* Uppercase height */ "YTFI" 560; /* Figure height */}
     }
 
 
@@ -36,6 +40,7 @@
       animation-iteration-count: infinite;
       animation-direction: alternate;
       animation-play-state: running;
-    }
 
+
+    }
 </style>
