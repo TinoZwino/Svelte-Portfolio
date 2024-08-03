@@ -1,8 +1,15 @@
 /* Roboto flex */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,slnt,wdth,wght,GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC@8..144,-10..0,25..151,100..1000,-200..150,27..175,323..603,25..135,649..854,-305..-98,560..788,416..570,528..760&display=swap');
 
+:root{
+    --fg-color: #FFFF80;
+    --secondary-color: #ffff00;
+    --tertiary-color: #a9a900;
+    --bg-color: #004000;
+}
+
 *{
-    background: rgb(136, 136, 136);
+    color: var(--fg-color);
     font-family: "Roboto Flex", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -19,4 +26,52 @@
       "YTFI" 738, /* Figure height */
       "YTLC" 514, /* Lowercase height */
       "YTUC" 712; /* Uppercase height */
+}
+
+body{
+    background: var(--bg-color);
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    padding: 20px;
+}
+
+@keyframes linkAnimation {
+    0% {font-weight: 300;}
+    100% {font-weight: 1000;}
+    }
+
+
+a {
+    text-decoration: underline;
+    color: var(--secondary-color);
+    font-weight: 600;
+
+    transition: font-weight 1s cubic-bezier(.45,.05,.55,.95) 100ms;
+}
+
+a:link {
+}
+
+a:visited {
+    color: var(--tertiary-color);
+}
+
+a:focus {
+    border-radius: 25%;
+    border-color: var(--fg-color);
+}
+
+a:hover {
+    text-decoration: wavy;
+
+    animation: linkAnimation 1s;
+    animation-timing-function: cubic-bezier(.45,.05,.55,.95);
+    animation-direction: normal;
+    font-weight: 1000;
+}
+
+a:active {
 }
