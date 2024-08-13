@@ -1,10 +1,13 @@
 /* Roboto flex */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,slnt,wdth,wght,GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC@8..144,-10..0,25..151,100..1000,-200..150,27..175,323..603,25..135,649..854,-305..-98,560..788,416..570,528..760&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 
 :root{
     --fg-color: #FFFF80;
     --secondary-color: #ffff00;
     --bg-color: #004000;
+
+    --letter-size: 1rem;
 }
 
 *{
@@ -51,8 +54,11 @@ nav ul li {
     }
 }
 
+a:link{
+    transition: text-decoration 0.15s cubic-bezier(.45,.05,.55,.95);
 
-a:link {
+}
+a:link, a:link span {
     color: var(--secondary-color);
     text-decoration: none;
     text-decoration-style: solid;
@@ -60,8 +66,7 @@ a:link {
     text-decoration-skip-ink: none;
     color: var(--secondary-color);
 
-    transition: font-weight 0.15s cubic-bezier(.45,.05,.55,.95) 100ms, font-variation-settings 0.15s cubic-bezier(.45,.05,.55,.95) 100ms, text-decoration 0.15s cubic-bezier(.45,.05,.55,.95);
-
+    transition: font-weight 0.15s cubic-bezier(.45,.05,.55,.95) 100ms, font-variation-settings 0.15s cubic-bezier(.45,.05,.55,.95) 100ms;
     font-weight: 600;
     font-variation-settings:
     "slnt" 0,
@@ -69,12 +74,24 @@ a:link {
     "YTAS" 750, /* Ascender Height */
     "YTDE" -203, /* Descender depth */
     "YTLC" 514, /* Lowercase height */
-    "YTUC" 712; /* Uppercase height */
+    "YTUC" 712, /* Uppercase height */
+    "FILL" 0; /* Fill */
 }
 
-a:hover {
+a:link span{
+    padding: 10px 10xp 0px 10px;
+}
+
+a:link:last-child{
+    padding: 10px 10xp 10px 10px;
+}
+
+a:hover{
     text-decoration: underline;
     text-decoration-thickness: 4px;
+}
+
+a:hover, a:hover span{
     font-weight: 1000;
     font-variation-settings:
     "slnt" -2,
@@ -82,11 +99,46 @@ a:hover {
     "YTAS" 854, /* Ascender Height */
     "YTDE" -305, /* Descender depth */
     "YTLC" 416, /* Lowercase height */
-    "YTUC" 760; /* Uppercase height */
+    "YTUC" 760, /* Uppercase height */
+    "FILL" 1; /* Fill */
 
 
 }
 
-a:active {
+a:active, a:active span {
     color: var(--fg-color);
 }
+
+#linkList{
+    list-style-type: none;
+}
+
+#linkList li{
+    margin: 20px;
+}
+
+.button{
+    height: calc(2*var(--letter-size));
+    align-items:center;
+    background: var(--fg-color);
+    color: var(--bg-color);
+    border-radius: 100000px;
+    padding: 10px;
+
+}
+
+
+.button span{
+    color: var(--bg-color);
+    padding: 10px 0px 10px 10px;
+}
+
+.button:last-child{
+    padding-right: 10px;
+}
+
+.icon{
+    height: 20px;
+    transform: translateY(23%);
+}
+

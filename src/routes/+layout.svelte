@@ -1,8 +1,8 @@
 <header>
     <nav>
         <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/links">Links</a></li>
+            <li><a href="/"><span class="material-symbols-outlined icon">home</span><span>Home</span></a></li>
+            <li><a href="/links"><span class="material-symbols-outlined icon">link</span><span>Links</span></a></li>
         </ul>
     </nav>
 </header>
